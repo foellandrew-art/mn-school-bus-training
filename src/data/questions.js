@@ -1,0 +1,8 @@
+// Minimal sample questions. Replace or expand this file with your full question set.
+// Each question object: { id, type: 'mc'|'tf'|'fib', unit, q, a, o?, exp?, s?, r? }
+export default [
+  { id: 1, type: 'mc', unit: 1, q: "The 'Danger Zone' directly in front of the bus extends how many feet?", a: "10 feet", o: ["5 feet", "10 feet", "15 feet", "25 feet"], s: "MN Stat 169.444", r: "CDL 10.1.1", exp: "The front danger zone is critical for pedestrian safety, especially children who may dart out." },
+  { id: 2, type: 'mc', unit: 1, q: "To see the ground 10 feet in front of the bus, which mirrors must be properly adjusted?", a: "Crossover mirrors", o: ["Flat mirrors", "Convex mirrors", "Crossover mirrors", "Interior mirrors"], s: "MN Rule 7470.1000", r: "CDL 10.1.2", exp: "Crossover mirrors (quadrants) are specifically designed for the front bumper area." },
+  { id: 50, type: 'mc', unit: 5, q: "A student who is denied bus privileges should:", a: "Be notified through the school office", o: ["Be told by the driver", "Be notified through the school office", "Find out when the bus doesn't stop", "Call the Governor"], s: "MN Rule 7470", r: "CDL 10.5.1", exp: "Due process is handled by the school administration." },
+  { id: 101, type: 'mc', unit: 1, q: "The most dangerous part of the danger zone is:", a: "The first 10 feet in front of the bus", o: ["Behind the bus", "The first 10 feet in front of the bus", "The sides of the bus", "10 feet behind the rear bumper"], exp: "Children are hardest to see directly in front due to the hood and crossover mirror limitations.", s: "MN CDL Manual Section 10.1", r: "CDL 10.1.1" }
+];
