@@ -1,24 +1,24 @@
-This is free and unencumbered software released into the public domain.
+# Minnesota School Bus Training — Vite React app
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+This repo contains a lightweight Vite + React app for the Minnesota School Bus (S) endorsement training.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+Quick start (local)
+1. Install dependencies:
+   npm install
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+2. Start dev server:
+   npm run dev
+   Open http://localhost:5173
 
-For more information, please refer to <https://unlicense.org>
+Build
+- npm run build
+- Dist folder will be created at ./dist
+
+Publish
+- This repo includes a GitHub Actions workflow (.github/workflows/deploy.yml) that builds the site and publishes the contents of ./dist to the gh-pages branch on pushes to main.
+- Alternatively, you can use Netlify/Vercel by connecting the repository and setting the build command to `npm run build` and publish directory to `dist`.
+
+Notes
+- Questions are stored in src/data/questions.js — add or replace content there if you want more questions.
+- Tailwind and lucide are included via CDN in index.html for fastest setup. If you'd like a PostCSS/Tailwind build, I can add it.
+- confetti is bundled via npm (canvas-confetti).
